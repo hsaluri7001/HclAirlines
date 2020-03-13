@@ -1,12 +1,13 @@
 eclipse.preferences.version=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=1
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=AirLines_Search
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=3
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=2
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=AirLines_Booking
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=2.2.5.RELEASE
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Demo project for Spring Boot
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.hcl
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=1.8
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=AirLines_Search
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=AirLines_Booking
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.hcl.airlines
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
