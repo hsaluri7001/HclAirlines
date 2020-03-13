@@ -1,0 +1,5 @@
+package com.hcl.airlines.controller;
+
+public class Flight {
+
+}

@@ -1,0 +1,5 @@
+package com.hcl.airlines;
+
+public class SwaggerConfig {
+
+}

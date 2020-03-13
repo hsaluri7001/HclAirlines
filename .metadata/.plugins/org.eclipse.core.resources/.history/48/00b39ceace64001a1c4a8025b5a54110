@@ -1,0 +1,5 @@
+package com.hcl.airlines.service;
+
+public class SearchFlightService {
+
+}
