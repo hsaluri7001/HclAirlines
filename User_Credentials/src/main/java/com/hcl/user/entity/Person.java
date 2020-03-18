@@ -26,7 +26,6 @@ public class Person {
 	private Integer age;
 	private String email;
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "person")
-	@JsonIgnore
 	private Set<Adress> adress;
 
 	public int getId() {
