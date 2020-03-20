@@ -1,7 +1,7 @@
 package com.hcl.loan.config;
-
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.item.ItemProcessor;
@@ -18,6 +18,7 @@ import com.hcl.loan.itemwriter.CustomerItemWriter;
  *
  */
 @Configuration
+@EnableBatchProcessing
 public class CustomerJobConfiguration {
 
 	@Autowired
@@ -35,10 +36,10 @@ public class CustomerJobConfiguration {
 	public Step createCustomerStep() {
 		return stepBuilderFactory.get("createCustomerStep").chunk(1).reader(customerItemReader.createUserItemReader()).processor((ItemProcessor)customerItemProcessor).writer(customerItemWriter.createCustomerItemWriter()).build();
 	}
-	
 	@Bean
 	public Job createCustomerJob() {
-		return jobBuilderFactory.get("createCustomerJob").flow(createCustomerStep()).end().build();
-		
+		return  jobBuilderFactory.get("createCustomerJob").flow(createCustomerStep()).end().build();
 	}
+	
+
 }

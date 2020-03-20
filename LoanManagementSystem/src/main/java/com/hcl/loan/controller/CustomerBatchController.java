@@ -1,5 +1,6 @@
 package com.hcl.loan.controller;
 
+
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParametersBuilder;
 import org.springframework.batch.core.JobParametersInvalidException;
@@ -24,7 +25,7 @@ private Job customerJob;
 	public String customerJobLauncher() {
 		String status="job failed";
 		try {
-			jobLauncher.run(customerJob, new JobParametersBuilder().addLong("customerJob",System.currentTimeMillis()).toJobParameters());
+			jobLauncher.run(customerJob, new JobParametersBuilder().addLong("customer",System.currentTimeMillis()).toJobParameters());
 			status="jobCompleter";
 		} catch (JobExecutionAlreadyRunningException | JobRestartException | JobInstanceAlreadyCompleteException
 				| JobParametersInvalidException e) {

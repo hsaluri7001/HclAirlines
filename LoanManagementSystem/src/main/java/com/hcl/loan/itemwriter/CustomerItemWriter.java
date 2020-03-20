@@ -22,10 +22,10 @@ import com.hcl.loan.utils.SqlConstants;
 public class CustomerItemWriter {
 
 	@Autowired
-	private DataSource dataSource;
+	 DataSource dataSource;
 
 	public ItemWriter<Customer> createCustomerItemWriter() {
-		JdbcBatchItemWriter<Customer> itemWriter = new JdbcBatchItemWriter<Customer>();
+		JdbcBatchItemWriter<Customer> itemWriter = new JdbcBatchItemWriter<>();
 		itemWriter.setDataSource(dataSource);
 		itemWriter.setSql(SqlConstants.INSERTINTOCUSTOMER);
 		itemWriter.setItemPreparedStatementSetter(new ItemPreparedStatementSetter<Customer>() {

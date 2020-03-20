@@ -18,13 +18,15 @@
 <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
 <fullyQualifiedTypeName name="org.springframework.batch.item.ItemReader"/>
 <fullyQualifiedTypeName name="java.net.URL"/>
-<fullyQualifiedTypeName name="org.springframework.batch.item.ItemWriter"/>
-<fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="com.hcl.datamig.sql.SqlConstants"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.PreparedStatementSetter"/>
 <fullyQualifiedTypeName name="net.bytebuddy.asm.MemberSubstitution.Substitution.Chain.Step"/>
+<fullyQualifiedTypeName name="com.hcl.datamig.bean.User"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="com.hcl.loan.utils.SqlConstants"/>
+<fullyQualifiedTypeName name="org.springframework.batch.item.ItemWriter"/>
 <fullyQualifiedTypeName name="org.springframework.batch.core.Step"/>
 <fullyQualifiedTypeName name="org.springframework.batch.item.ItemProcessor"/>
+<fullyQualifiedTypeName name="org.springframework.batch.core.launch.JobLauncher"/>
 <fullyQualifiedTypeName name="org.springframework.batch.core.Job"/>
-<fullyQualifiedTypeName name="com.hcl.datamig.bean.User"/>
 </qualifiedTypeNameHistroy>
