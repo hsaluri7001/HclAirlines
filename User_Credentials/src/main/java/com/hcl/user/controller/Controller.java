@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.hcl.user.entity.Person;
 import com.hcl.user.service.UserService;
 
+/**
+ * @author saluri
+ *
+ */
 @RestController
 @RequestMapping("/User")
 public class Controller {

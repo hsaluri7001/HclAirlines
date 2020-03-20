@@ -13,32 +13,35 @@ import org.springframework.stereotype.Repository;
 
 import com.hcl.datamig.bean.User;
 
+/**
+ * @author saluri
+ *
+ */
 @Repository
 public class UserItemReader {
 
-	public ItemReader<User> createAccountItemReader() {
+	public ItemReader<User> createUserItemReader() {
 		FlatFileItemReader<User> itemReader = new FlatFileItemReader<>();
-		itemReader.setResource(new FileSystemResource("E://HCL CLEARANCE/user.csv"));
+		itemReader.setResource(new FileSystemResource("D://HCL CLEARANCE/AccountTransactions.csv"));
 		itemReader.setLinesToSkip(1);
-		itemReader.setLineMapper(createAccountLineMapper());
+		itemReader.setLineMapper(createUserLineMapper());
 		return itemReader;
 	}
 
-	private LineMapper<User> createAccountLineMapper() {
+	private LineMapper<User> createUserLineMapper() {
 		DefaultLineMapper<User> lineMapper = new DefaultLineMapper<>();
-		lineMapper.setLineTokenizer(createAccountLineTokenizer());
-		lineMapper.setFieldSetMapper(createAccountFieldSetMapper());
+		lineMapper.setLineTokenizer(createUserLineTokenizer());
+		lineMapper.setFieldSetMapper(createUserFieldSetMapper());
 		return lineMapper;
 	}
 
-	private LineTokenizer createAccountLineTokenizer() {
+	private LineTokenizer createUserLineTokenizer() {
 		DelimitedLineTokenizer lineTokenizer = new DelimitedLineTokenizer();
-		lineTokenizer.setDelimiter(";");
 		lineTokenizer.setNames(new String[] { "id", "name", "age", "email", "mobile" });
 		return lineTokenizer;
 	}
 
-	private FieldSetMapper<User> createAccountFieldSetMapper() {
+	private FieldSetMapper<User> createUserFieldSetMapper() {
 		BeanWrapperFieldSetMapper<User> fieldSetMapper = new BeanWrapperFieldSetMapper<>();
 		fieldSetMapper.setTargetType(User.class);
 		return fieldSetMapper;

@@ -6,6 +6,10 @@ import org.springframework.stereotype.Service;
 import com.hcl.user.dao.UserDao;
 import com.hcl.user.entity.Person;
 
+/**
+ * @author saluri
+ *
+ */
 @Service
 public class UserService {
 

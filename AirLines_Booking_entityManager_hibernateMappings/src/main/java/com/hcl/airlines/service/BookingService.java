@@ -17,6 +17,10 @@ import com.hcl.airlines.exception.BookingException;
 import com.hcl.airlines.repository.BookingRepo;
 import com.hcl.airlines.repository.InventoryRepository;
 
+/**
+ * @author saluri
+ *
+ */
 @Service
 public class BookingService {
 

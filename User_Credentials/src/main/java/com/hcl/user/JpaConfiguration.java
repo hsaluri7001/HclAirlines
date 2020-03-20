@@ -10,6 +10,10 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
+/**
+ * @author saluri
+ *
+ */
 @Configuration
 public class JpaConfiguration {
 	

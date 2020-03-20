@@ -1,8 +1,12 @@
 package com.hcl.airlines.exception;
 
-public class BookingException extends RuntimeException{
+/**
+ * @author saluri
+ *
+ */
+public class BookingException extends RuntimeException {
 
-	public BookingException(String s){
-	super(s);
+	public BookingException(String s) {
+		super(s);
 	}
 }

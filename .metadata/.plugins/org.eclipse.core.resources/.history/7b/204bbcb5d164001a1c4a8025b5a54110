@@ -1,9 +1,0 @@
-package com.hcl.airlines.exception;
-
-
-@ControllerAdvice
-public class GlobalExceptionHandler {
-	
-
-
-}

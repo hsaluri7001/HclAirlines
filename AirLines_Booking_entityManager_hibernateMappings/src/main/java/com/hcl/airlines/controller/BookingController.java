@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.hcl.airlines.entity.BookingRecord;
 import com.hcl.airlines.service.BookingService;
 
+/**
+ * @author saluri
+ *
+ */
 @RestController
 @RequestMapping("/booking")
 public class BookingController {

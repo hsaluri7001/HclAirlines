@@ -1,6 +1,5 @@
 package com.hcl.airlines.entity;
 
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -8,9 +7,13 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+/**
+ * @author saluri
+ *
+ */
 @Entity
 @Table(name = "INVENTORY")
-public class Inventory{
+public class Inventory {
 
 	@Id
 	@SequenceGenerator(name = "INVENTORY_SEQ", sequenceName = "INVENTORY_SEQ", allocationSize = 1)
@@ -19,11 +22,11 @@ public class Inventory{
 	private String flightNumber;
 	private String flightDate;
 	private int available;
-	
+
 	public Inventory() {
-		
+
 	}
-	
+
 	public Inventory(int id, String flightNumber, String flightDate, int available) {
 		super();
 		this.id = id;

@@ -11,6 +11,10 @@ import com.hcl.airlines.entity.Inventory;
 import com.hcl.airlines.exception.FlightNotFound;
 import com.hcl.airlines.repository.FlightRepository;
 
+/**
+ * @author saluri
+ *
+ */
 @Service
 public class SearchFlightService {
 	@Autowired

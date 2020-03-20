@@ -4,6 +4,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.hcl.airlines.entity.BookingRecord;
 
-public interface BookingRepository  extends JpaRepository<BookingRecord,Integer>{
+/**
+ * @author saluri
+ *
+ */
+public interface BookingRepository extends JpaRepository<BookingRecord, Integer> {
 
 }

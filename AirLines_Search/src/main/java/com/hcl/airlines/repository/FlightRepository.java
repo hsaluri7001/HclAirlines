@@ -6,6 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.hcl.airlines.entity.Flight;
 
+/**
+ * @author saluri
+ *
+ */
 public interface FlightRepository extends JpaRepository<Flight,Integer>{
 
 	List<Flight> findByOriginAndDestinationAndFlightDate(String origin,String destination, String flightDate);

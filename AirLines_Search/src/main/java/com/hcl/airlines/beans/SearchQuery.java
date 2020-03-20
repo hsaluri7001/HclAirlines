@@ -1,5 +1,9 @@
 package com.hcl.airlines.beans;
 
+/**
+ * @author saluri
+ *
+ */
 public class SearchQuery {
 
 	private String origin;

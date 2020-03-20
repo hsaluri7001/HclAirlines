@@ -14,6 +14,10 @@ import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+/**
+ * @author saluri
+ *
+ */
 @Entity
 @Table(name = "BOOKING_RECORD")
 public class BookingRecord {

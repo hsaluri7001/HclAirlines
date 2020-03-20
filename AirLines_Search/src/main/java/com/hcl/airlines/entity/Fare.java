@@ -7,6 +7,10 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+/**
+ * @author saluri
+ *
+ */
 @Entity
 @Table(name = "FARE")
 public class Fare {

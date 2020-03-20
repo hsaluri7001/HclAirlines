@@ -12,6 +12,10 @@ import com.hcl.airlines.beans.SearchQuery;
 import com.hcl.airlines.entity.Flight;
 import com.hcl.airlines.service.SearchFlightService;
 
+/**
+ * @author saluri
+ *
+ */
 @RestController
 @RequestMapping("/search")
 public class FlightsController {

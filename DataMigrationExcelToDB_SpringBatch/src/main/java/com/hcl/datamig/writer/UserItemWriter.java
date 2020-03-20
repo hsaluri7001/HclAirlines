@@ -14,12 +14,16 @@ import org.springframework.stereotype.Repository;
 import com.hcl.datamig.bean.User;
 import com.hcl.datamig.sql.SqlConstants;
 
+/**
+ * @author saluri
+ *
+ */
 @Repository
 public class UserItemWriter {
 	@Autowired
 	private DataSource dataSource;
 	
-public ItemWriter<User> createAccountItemWriter(){
+public ItemWriter<User> createUserItemWriter(){
 JdbcBatchItemWriter<User> itemWriter=new JdbcBatchItemWriter<>();
   itemWriter.setDataSource(dataSource);
   
@@ -33,6 +37,7 @@ JdbcBatchItemWriter<User> itemWriter=new JdbcBatchItemWriter<>();
 		ps.setString(2, user.getName());
 		ps.setString(3, user.getAge());
 		ps.setString(4, user.getEmail());
+		ps.setString(5, user.getMobile());
 	}
   });
 return itemWriter;

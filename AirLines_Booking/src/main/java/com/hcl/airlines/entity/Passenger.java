@@ -1,6 +1,5 @@
 package com.hcl.airlines.entity;
 
-
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -13,6 +12,10 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+/**
+ * @author saluri
+ *
+ */
 @Entity
 @Table(name = "PASSENGER")
 public class Passenger {
@@ -28,7 +31,7 @@ public class Passenger {
 	@JoinColumn(name = "BOOKING_ID")
 	@JsonIgnore
 	private BookingRecord bookingRecord;
-	
+
 	public int getId() {
 		return id;
 	}

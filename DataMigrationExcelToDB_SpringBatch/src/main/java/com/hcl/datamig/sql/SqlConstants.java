@@ -1,7 +1,11 @@
 package com.hcl.datamig.sql;
 
+/**
+ * @author saluri
+ *
+ */
 public class SqlConstants {
 	
-	public static final String INSERT_INTO_USER="insert into user(id,name,age,email) values(?,?,?,?)";
+	public static final String INSERT_INTO_USER="INSERT INTO USER_TABLE(ID,NAME,AGE,EMAIL,MOBILE) VALUES(?,?,?,?,?)";
 
 }

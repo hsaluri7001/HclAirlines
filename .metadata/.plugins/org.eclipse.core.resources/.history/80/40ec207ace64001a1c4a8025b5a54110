@@ -1,5 +1,0 @@
-package com.hcl.airlines.repository;
-
-public class FlightRepository {
-
-}

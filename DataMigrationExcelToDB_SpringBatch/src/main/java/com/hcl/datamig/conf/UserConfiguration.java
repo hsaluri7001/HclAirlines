@@ -7,13 +7,18 @@ import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.hcl.datamig.processor.UserItemProcessor;
 import com.hcl.datamig.reader.UserItemReader;
 import com.hcl.datamig.writer.UserItemWriter;
-import com.hcl.processor.UserItemProcessor;
 
+/**
+ * @author saluri
+ *
+ */
 @Configuration
 @EnableBatchProcessing
 public class UserConfiguration {
@@ -30,9 +35,10 @@ public class UserConfiguration {
 	StepBuilderFactory stepBuilderFactory;
 	
 	
+	
 	@Bean
 	public Step createUserStep() {
-		return stepBuilderFactory.get("createUserStep").chunk(1).reader(userItemReader.createAccountItemReader()).processor((ItemProcessor)userItemProcessor).writer(userItemWriter.createAccountItemWriter()).build();
+		return stepBuilderFactory.get("createUserStep").chunk(1).reader(userItemReader.createUserItemReader()).processor((ItemProcessor)userItemProcessor).writer(userItemWriter.createUserItemWriter()).build();
 	}
 	@Bean
 	public Job createUserJob() {

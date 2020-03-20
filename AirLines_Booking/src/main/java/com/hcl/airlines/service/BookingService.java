@@ -17,12 +17,16 @@ import com.hcl.airlines.exception.BookingException;
 import com.hcl.airlines.repository.BookingRepository;
 import com.hcl.airlines.repository.InventoryRepository;
 
+/**
+ * @author saluri
+ *
+ */
 @Service
 public class BookingService {
 
 	@Autowired
 	BookingRepository bookingRepository;
-	
+
 	@Autowired
 	InventoryRepository inventoryRepository;
 
@@ -30,9 +34,9 @@ public class BookingService {
 		// TODO Auto-generated method stub
 		return bookingRepository.getOne(bookingId);
 	}
-	
+
 	public Long book(BookingRecord record) {
-		
+
 		Inventory inventory = inventoryRepository.findByFlightNumberAndFlightDate(record.getFlightNumber(),
 				record.getFlightDate());
 		if (!inventory.isAvailable(record.getPassengers().size())) {
@@ -53,8 +57,9 @@ public class BookingService {
 		long id = bookingRepository.save(record).getId();
 		System.out.println("Successfully saved booking");
 		return id;
-	
+
 	}
+
 	@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder) {
 		// Do any additional configuration here

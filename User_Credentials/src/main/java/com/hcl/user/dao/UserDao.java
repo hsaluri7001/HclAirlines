@@ -8,6 +8,10 @@ import org.springframework.stereotype.Repository;
 
 import com.hcl.user.entity.Person;
 
+/**
+ * @author saluri
+ *
+ */
 @Repository
 @Transactional
 public class UserDao {

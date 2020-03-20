@@ -9,6 +9,10 @@ import org.springframework.stereotype.Repository;
 
 import com.hcl.airlines.entity.BookingRecord;
 
+/**
+ * @author saluri
+ *
+ */
 @Repository
 @Transactional
 public class BookingRepo {

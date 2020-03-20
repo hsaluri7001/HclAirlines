@@ -2,6 +2,10 @@ package com.hcl.airlines.exception;
 
 import java.time.LocalDateTime;
 
+/**
+ * @author saluri
+ *
+ */
 public class CustomException extends RuntimeException{
 	
 	private LocalDateTime timestamp;
