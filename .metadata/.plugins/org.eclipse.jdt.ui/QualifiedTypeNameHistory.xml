@@ -29,4 +29,8 @@
 <fullyQualifiedTypeName name="org.springframework.batch.item.ItemProcessor"/>
 <fullyQualifiedTypeName name="org.springframework.batch.core.Step"/>
 <fullyQualifiedTypeName name="org.springframework.batch.core.Job"/>
+<fullyQualifiedTypeName name="springfox.documentation.swagger2.annotations.EnableSwagger2"/>
+<fullyQualifiedTypeName name="springfox.documentation.spi.DocumentationType"/>
+<fullyQualifiedTypeName name="springfox.documentation.builders.RequestHandlerSelectors"/>
+<fullyQualifiedTypeName name="org.springframework.batch.core.JobExecution"/>
 </qualifiedTypeNameHistroy>
